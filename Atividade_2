@@ -1,0 +1,27 @@
+programa
+{
+	
+inclua biblioteca Matematica --> m
+	
+	funcao inicio()
+	{
+		inteiro a, b, c, delta
+
+		escreva("Diga um número inteiro: \n")
+		leia(a)
+		escreva("Diga outro número inteiro: \n")
+		leia(b)
+		escreva("Diga outro número inteiro: \n")
+		leia(c)
+
+		delta = (b * b) - 4 * a * c
+		
+		escreva("A=", a, " B=", b, " C=", c, "\n")
+
+		escreva("O delta é: ", delta, "\n")
+
+		escreva("X1 é: ", (-1 * b + m.raiz(delta, 2)) / (2 * a), "\n")
+
+		escreva("X2 é: ", (-1 * b - m.raiz(delta, 2)) / (2 * a), "\n")
+	}
+}
