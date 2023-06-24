@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro ano
+
+    escreva("Diga um ano qualquer.\n")
+    leia(ano)
+
+    se((ano % 4) == 0){ //Anos bissextos são de 4 em 4 anos, dividindo por 100 n ia dar certo como ano 8
+      escreva("Ano bissexto!")
+    }
+    senao{
+      escreva("Ano não bissexto.")
+    }
+  }
+}
