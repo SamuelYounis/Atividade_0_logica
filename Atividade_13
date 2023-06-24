@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro velocidade
+
+    escreva("Diga qual foi sua velocidade: ")
+    leia(velocidade)
+
+    se(velocidade > 80){
+      escreva("Você foi multado em um valor de R$", (velocidade - 80) * 7)
+    }
+    senao{
+      escreva("Dentro do permitido.")
+    }
+  }
+}
