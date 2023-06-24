@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+    inteiro coriza, dpr, ddg, febre, tosse, sintomas
+
+    escreva("Se você sente algum dos sintomas abaixo escreva 1, se não 0.\n")
+    escreva("Você sente coriza?\n")
+    leia(coriza)
+    escreva("Você sente tosse?\n")
+    leia(tosse)
+    escreva("Você está com febre?\n")
+    leia(febre)
+    escreva("Você sente dor de garganta?\n")
+    leia(ddg)
+    escreva("Você sente dificuldade para respirar?\n")
+    leia(dpr)
+
+    sintomas = coriza + tosse + febre + ddg + dpr
+
+    se(sintomas >= 3){
+      escreva("Você tem altas chances de estar com covid, procure um médico.\n")
+    }
+    senao se(dpr == 1){
+      escreva("Você tem altas chances de estar com covid, procure um médico.\n")
+    }
+    senao{
+      escreva("Dificilmente você está com covid, mas lembre-se de se cuidar e usar máscara!\n")
+    }
+  }
+}
