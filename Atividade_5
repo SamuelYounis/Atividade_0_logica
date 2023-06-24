@@ -1,0 +1,47 @@
+programa {
+  inclua biblioteca Matematica --> M
+  funcao inicio() {
+    se(2 * 4 == 24/3){
+        escreva("A) verdadeiro\n")
+      }
+      senao{
+        escreva("A) falso\n")
+      }
+    se((15 % 4) < (19 % 6)){
+        escreva("B) verdadeiro\n")
+      }
+      senao{
+        escreva("B) falso\n")
+      }
+    se((2 < 5) != (8 == 8)){
+        escreva("C) verdadeiro\n")
+      }
+      senao{
+        escreva("C) falso\n")
+      }
+    se(verdadeiro ou falso){
+        escreva("D) verdadeiro\n")
+      }
+      senao{
+        escreva("D) falso\n")
+      }
+    se(2 * 2 == M.potencia(2, 2){
+        escreva("E) verdadeiro\n")
+      }
+      senao{
+        escreva("E) falso\n")
+      }
+    se(verdadeiro e ( (7 / 2) > 3.5 )){
+        escreva("F) verdadeiro\n")
+      }
+      senao{
+        escreva("F) falso\n")
+      }
+    se((M.arredondar( 2.8, 0 ) == 3) e (M.raiz(9 , 2) == 3)){
+        escreva("G) verdadeiro\n")
+      }
+      senao{
+        escreva("G) falso\n")
+      }
+  }
+}
