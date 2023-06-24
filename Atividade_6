@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    inteiro x, y
+
+    escreva("Diga um numero inteiro: \n")
+    leia(x)
+    escreva("Diga outro numero natural diferente: \n")
+    leia(y)
+
+    se(x > y){
+      escreva("O maior é ", x)
+    }
+    senao se(x == y){
+      escreva("DIFERENTE!!!!!!!")
+    }
+    senao{
+      escreva("O maior é ", y)
+    }
+  }
+}
