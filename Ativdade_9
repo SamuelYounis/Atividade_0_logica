@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    inteiro x, y, z
+
+    escreva("Diga um número inteiro: ")
+    leia(x)
+    escreva("Diga outro número: ")
+    leia(y)
+    escreva("Diga outro número: ")
+    leia(z)
+
+    se(x < (y + z) ou y < (x + z) ou z < (x + y)){
+      se(x == y e y == z e x == z){
+        escreva("Equilatero.")
+      }
+      senao se(x == y e (x + y) > z ou z == y e (z + y) > x ou x == z e (x + z) > y){
+        escreva("Isoceles")
+      }
+      senao se(x != y e x != z e y != z){
+        escreva("Escaleno")
+      }
+    }
+    se(x > (y + z) ou y > (x + z) ou z > (x + y)){
+      escreva("nao triangulo")
+    }
+  }
+}
