@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+    real n1, n2
+
+    escreva("Diga a primeira nota: ")
+    leia(n1)
+    escreva("Diga a outra nota: ")
+    leia(n2)
+
+    se((n2 + n1) >= 14 e (n1 + n2) < 20){
+      escreva("Aprovado!")
+    }
+    senao se((n2 + n1) == 20){
+      escreva("Aprovado com Distinção!")
+    }
+    senao{
+      escreva("Reprovado :C")
+    }
+  }
+}
