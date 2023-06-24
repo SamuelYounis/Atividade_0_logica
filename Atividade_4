@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() {
+    inteiro dias
+    real km
+
+    escreva("Quantos dias você ficou com o carro aluguado?\n")
+    leia(dias)
+
+    escreva("Quantos Kms foram percorridos?\n")
+    leia(km)
+
+    escreva("Tendo utilizado o carro por ", dias, " dias e andado ", km, " quilometros, foi gasto um total de R$", (dias * 60) + (km * 0.15), ".")
+  }
+}
