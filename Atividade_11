@@ -1,0 +1,37 @@
+programa {
+  funcao inicio() {
+    inteiro x, y, z
+
+    escreva("Escolha um número: ")
+    leia(x)
+    escreva("Escolha outro número: ")
+    leia(y)
+    escreva("Escolha outro número: ")
+    leia(z)
+
+    se(x >= y e x >= z){
+      se(y >= z){
+        escreva(x, y, z)
+      }
+      senao{ //z>y
+        escreva(x, z, y)
+       }
+      }
+    se(y >= x e y >= z){
+      se(x >= z){
+        escreva(y, x, z)
+      }
+      senao{
+        escreva(y, z, x)
+      }
+    }
+    se(z >= x e z >= y){
+      se(x >= y){
+        escreva(z, x, y)
+      }
+      senao{
+        escreva(z, y ,x)
+      }
+    }
+  }
+}
