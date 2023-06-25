@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+    inteiro codigo, quantidade
+
+    escreva("Diga o código do item pedido \n")
+    escreva(" C |       E       |  Pu  \n")
+    escreva("100|Cachorro Quente| 5,00\n")
+    escreva("101|     Bauru     | 2,60\n")
+    escreva("102|  Bauru c/ovo  | 3,80\n")
+    escreva("103|   Hamburguer  | 9,00\n")
+    escreva("104| Cheeseburguer | 11,00\n")
+    escreva("105|  Refrigerante | 3,00\n")
+    escreva("106|   God seeds   | 1000\n\n")
+    escreva("Diga o Código do produto: \n")
+    leia(codigo)
+    escreva("Agora diga a quantidade: \n")
+    leia(quantidade)
+
+    se(codigo == 100){
+      escreva("R$", 5 * quantidade, ",00\n")
+    }
+    se(codigo == 101){
+      escreva("R$", 2.60 * quantidade, "\n")
+    }
+    se(codigo == 102){
+      escreva("R$", 3.80 * quantidade, "\n")
+    }
+    se(codigo == 103){
+      escreva("R$", 9 * quantidade, ",00\n")
+    }
+    se(codigo == 104){
+      escreva("R$", 11 * quantidade, ",00\n")
+    }
+    se(codigo == 105){
+      escreva("R$", 3 * quantidade, ",00\n")
+    }
+    se(codigo == 106){
+      escreva("R$", 1000 * quantidade, ",00\n")
+    }
+  }
+}
